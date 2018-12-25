@@ -37,7 +37,7 @@ section .data
 section .text
 main:
 		lea esi, [shellcode]				;load the string shellcode into esi address
-		mov ebx, [shellcode_len]			;mov length into ebx
+		mov ebx, shellcode_len				;mov length into ebx
 		xor ecx, ecx					;clean up ecx
 ;------------------------------------------------
 ;  Calculate Checksum
